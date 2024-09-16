@@ -1,0 +1,63 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Migrations
+*/migrations/*
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.pyo
+*.db
+*.sqlite3
+*.pkl
+
+# ENV - Thư mục môi trường ảo
+env/
+venv/
+ENV/
+VENV/
+.venv/
+.pyenv/
+# Nếu bạn sử dụng pipenv:
+pipenv.lock
+
+# Thư viện của node_modules cho frontend (nếu dùng React.js)
+node_modules/
+
+# Thư mục media (nếu dùng để lưu file upload)
+media/
+
+# Static files (nếu bạn tạo các file tĩnh trong quá trình build)
+static/
+
+# IDE
+.vscode/
+.idea/
+
+# Django secret key
+**/settings.py
+*.env
+
+# Coverage reports
+htmlcov/
+.coverage
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# MySQL dump files
+*.sql
+
+# MacOS
+.DS_Store
+
+# Thư mục tạm thời
+tmp/
+temp/

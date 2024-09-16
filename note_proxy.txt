@@ -1,0 +1,36 @@
+# Tạo môi trường ảo (sử dụng venv)
+python3 -m venv env
+
+# Kích hoạt môi trường ảo
+source env/bin/activate  # Trên Linux hoặc macOS
+# hoặc
+.\env\Scripts\activate  # Trên Windows
+
+# Cài đặt các thư viện từ requirements.txt
+pip install -r requirements.txt
+
+# Cài đặt Django
+pip install django
+
+# Nếu có sử dụng các thư viện khác thì cài đặt thêm (ví dụ)
+pip install djangorestframework  # Ví dụ, nếu bạn sử dụng Django REST Framework
+
+# Tạo các tệp migration cho cơ sở dữ liệu
+python manage.py makemigrations
+
+# Áp dụng các migration để tạo bảng trong cơ sở dữ liệu
+python manage.py migrate
+
+# Tạo tài khoản superuser
+python manage.py createsuperuser
+
+# Chạy server phát triển của Django
+python manage.py runserver
+
+# Tạo file requirements.txt
+pip freeze > requirements.txt
+
+khởi động và bật dịch vụ:
+sudo systemctl daemon-reload
+sudo systemctl start 3proxy
+sudo systemctl enable 3proxy
